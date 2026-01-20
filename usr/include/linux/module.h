@@ -1,10 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_MODULE_H
-#define _LINUX_MODULE_H
-
-/* Flags for sys_finit_module: */
-#define MODULE_INIT_IGNORE_MODVERSIONS	1
-#define MODULE_INIT_IGNORE_VERMAGIC	2
-#define MODULE_INIT_COMPRESSED_FILE	4
-
-#endif /* _LINUX_MODULE_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:55bec96bf285e445b81d9a2928be47a0222e32794532e60c836af81b47518f11
+size 293

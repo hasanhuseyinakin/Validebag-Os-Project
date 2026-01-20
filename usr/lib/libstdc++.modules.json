@@ -1,16 +1,3 @@
-{
-  "version": 1,
-  "revision": 1,
-  "modules": [
-    {
-      "logical-name": "std",
-      "source-path": "../../tools/x86_64-lfs-linux-gnu/include/c++/15.2.0/bits/std.cc",
-      "is-std-library": true
-    },
-    {
-      "logical-name": "std.compat",
-      "source-path": "../../tools/x86_64-lfs-linux-gnu/include/c++/15.2.0/bits/std.compat.cc",
-      "is-std-library": true
-    }
-  ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:619ec208d0c0754bb143010e12e46c7ae01aa92db745494939cd477c81bbb47d
+size 387

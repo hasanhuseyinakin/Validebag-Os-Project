@@ -1,22 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _NF_CONNTRACK_SCTP_H
-#define _NF_CONNTRACK_SCTP_H
-/* SCTP tracking. */
-
-#include <linux/netfilter/nf_conntrack_tuple_common.h>
-
-enum sctp_conntrack {
-	SCTP_CONNTRACK_NONE,
-	SCTP_CONNTRACK_CLOSED,
-	SCTP_CONNTRACK_COOKIE_WAIT,
-	SCTP_CONNTRACK_COOKIE_ECHOED,
-	SCTP_CONNTRACK_ESTABLISHED,
-	SCTP_CONNTRACK_SHUTDOWN_SENT,
-	SCTP_CONNTRACK_SHUTDOWN_RECD,
-	SCTP_CONNTRACK_SHUTDOWN_ACK_SENT,
-	SCTP_CONNTRACK_HEARTBEAT_SENT,
-	SCTP_CONNTRACK_HEARTBEAT_ACKED,	/* no longer used */
-	SCTP_CONNTRACK_MAX
-};
-
-#endif /* _NF_CONNTRACK_SCTP_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:b71e45a172ee0bc03b30e777214cee0e6e944a544bd970e6c13c75eaf12b4b6d
+size 597

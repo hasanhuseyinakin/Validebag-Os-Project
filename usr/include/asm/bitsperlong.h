@@ -1,14 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __ASM_X86_BITSPERLONG_H
-#define __ASM_X86_BITSPERLONG_H
-
-#if defined(__x86_64__) && !defined(__ILP32__)
-# define __BITS_PER_LONG 64
-#else
-# define __BITS_PER_LONG 32
-#endif
-
-#include <asm-generic/bitsperlong.h>
-
-#endif /* __ASM_X86_BITSPERLONG_H */
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:8ef5efeb3f25ae47ce03ba892f5caf77631b1257715fc12de72c21e61db17e43
+size 321

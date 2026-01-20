@@ -1,13 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _ASM_X86_STATFS_H
-#define _ASM_X86_STATFS_H
-
-/*
- * We need compat_statfs64 to be packed, because the i386 ABI won't
- * add padding at the end to bring it to a multiple of 8 bytes, but
- * the x86_64 ABI will.
- */
-#define ARCH_PACK_COMPAT_STATFS64 __attribute__((packed,aligned(4)))
-
-#include <asm-generic/statfs.h>
-#endif /* _ASM_X86_STATFS_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:c4e7415dc58cd4e35581fcf3874ae0f50b0f9dbbbb2f7ea3044ce2e1bca741a6
+size 416

@@ -1,15 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note */
-/*
- * Copyright 1999-2000 Jeremy Fitzhardinge <jeremy@goop.org>
- *
- * This file is part of the Linux kernel and is made available under
- * the terms of the GNU General Public License, version 2, or at your
- * option, any later version, incorporated herein by reference.
- */
-
-#ifndef _LINUX_AUTO_FS4_H
-#define _LINUX_AUTO_FS4_H
-
-#include <linux/auto_fs.h>
-
-#endif /* _LINUX_AUTO_FS4_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:52b68513d4ccb8c62b0ad783d9e4815325a768d22ea6ed873c68b0f7fc18c500
+size 451

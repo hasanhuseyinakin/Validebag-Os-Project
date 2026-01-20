@@ -1,13 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __ASM_GENERIC_UCONTEXT_H
-#define __ASM_GENERIC_UCONTEXT_H
-
-struct ucontext {
-	unsigned long	  uc_flags;
-	struct ucontext  *uc_link;
-	stack_t		  uc_stack;
-	struct sigcontext uc_mcontext;
-	sigset_t	  uc_sigmask;	/* mask last for extensibility */
-};
-
-#endif /* __ASM_GENERIC_UCONTEXT_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:6d69ae18801e22b5642bdc9ed3ec44ba4f8e858fd298fdaa07693c58e5d49cbf
+size 357

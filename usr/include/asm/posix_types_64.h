@@ -1,20 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _ASM_X86_POSIX_TYPES_64_H
-#define _ASM_X86_POSIX_TYPES_64_H
-
-/*
- * This file is generally used by user-level software, so you need to
- * be a little careful about namespace pollution etc.  Also, we cannot
- * assume GCC is being used.
- */
-
-typedef unsigned short __kernel_old_uid_t;
-typedef unsigned short __kernel_old_gid_t;
-#define __kernel_old_uid_t __kernel_old_uid_t
-
-typedef unsigned long	__kernel_old_dev_t;
-#define __kernel_old_dev_t __kernel_old_dev_t
-
-#include <asm-generic/posix_types.h>
-
-#endif /* _ASM_X86_POSIX_TYPES_64_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:5cdabc01dac0a3e9731ac16353210a615ca44e85b6ec9eafd2e79206e0b26c76
+size 609

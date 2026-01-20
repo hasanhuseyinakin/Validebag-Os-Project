@@ -1,21 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _IPT_REJECT_H
-#define _IPT_REJECT_H
-
-enum ipt_reject_with {
-	IPT_ICMP_NET_UNREACHABLE,
-	IPT_ICMP_HOST_UNREACHABLE,
-	IPT_ICMP_PROT_UNREACHABLE,
-	IPT_ICMP_PORT_UNREACHABLE,
-	IPT_ICMP_ECHOREPLY,
-	IPT_ICMP_NET_PROHIBITED,
-	IPT_ICMP_HOST_PROHIBITED,
-	IPT_TCP_RESET,
-	IPT_ICMP_ADMIN_PROHIBITED
-};
-
-struct ipt_reject_info {
-	enum ipt_reject_with with;      /* reject type */
-};
-
-#endif /*_IPT_REJECT_H*/
+version https://git-lfs.github.com/spec/v1
+oid sha256:99dc3268b850f24ddfd1a9265170cf101e08f22ad8375b8f9d4c64aac809f5c9
+size 468

@@ -1,13 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _XT_STATE_H
-#define _XT_STATE_H
-
-#define XT_STATE_BIT(ctinfo) (1 << ((ctinfo)%IP_CT_IS_REPLY+1))
-#define XT_STATE_INVALID (1 << 0)
-
-#define XT_STATE_UNTRACKED (1 << (IP_CT_NUMBER + 1))
-
-struct xt_state_info {
-	unsigned int statemask;
-};
-#endif /*_XT_STATE_H*/
+version https://git-lfs.github.com/spec/v1
+oid sha256:9dd2ab01edab6c9ddcda148812bc43b94dd7925fe6ac31b8da17383aff0dc730
+size 331

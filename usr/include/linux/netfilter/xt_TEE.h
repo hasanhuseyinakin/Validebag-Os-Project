@@ -1,15 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _XT_TEE_TARGET_H
-#define _XT_TEE_TARGET_H
-
-#include <linux/netfilter.h>
-
-struct xt_tee_tginfo {
-	union nf_inet_addr gw;
-	char oif[16];
-
-	/* used internally by the kernel */
-	struct xt_tee_priv *priv __attribute__((aligned(8)));
-};
-
-#endif /* _XT_TEE_TARGET_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:4cff587d7da1bf45b7dce9d08427059ee5dc87818c6a22f8d0ce7262c48a6dca
+size 333

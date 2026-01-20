@@ -1,15 +1,3 @@
-/* SPDX-License-Identifier: LGPL-2.1+ WITH Linux-syscall-note */
-/*
- * version.h
- *
- * Copyright (C) 2000 Holger Waechtler <holger@convergence.de>
- *                    for convergence integrated media GmbH
- */
-
-#ifndef _DVBVERSION_H_
-#define _DVBVERSION_H_
-
-#define DVB_API_VERSION 5
-#define DVB_API_VERSION_MINOR 12
-
-#endif /*_DVBVERSION_H_*/
+version https://git-lfs.github.com/spec/v1
+oid sha256:a27096147a937fdcd29a2635c618a1ebf151ad43c8ee30ad2d19b920a8e4a235
+size 345

@@ -1,8 +1,3 @@
-#ifndef _LINUX_VIRTIO_RNG_H
-#define _LINUX_VIRTIO_RNG_H
-/* This header is BSD licensed so anyone can use the definitions to implement
- * compatible drivers/servers. */
-#include <linux/virtio_ids.h>
-#include <linux/virtio_config.h>
-
-#endif /* _LINUX_VIRTIO_RNG_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:4f65ef0109f5236a73d653d145b9757285facce03cfa057800df405d9c11365b
+size 265

@@ -1,4 +1,3 @@
-/* Other systems declare `struct statfs' et al in <sys/vfs.h>,
-   so we have this file to be compatible with programs expecting it.  */
-
-#include <sys/statfs.h>
+version https://git-lfs.github.com/spec/v1
+oid sha256:36e49a8e51dbc4e1d40c655454984a3fd6d401c482dfdcc74a93b0853918ac38
+size 161

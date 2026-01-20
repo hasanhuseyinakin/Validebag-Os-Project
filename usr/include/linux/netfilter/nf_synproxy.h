@@ -1,23 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _NF_SYNPROXY_H
-#define _NF_SYNPROXY_H
-
-#include <linux/types.h>
-
-#define NF_SYNPROXY_OPT_MSS		0x01
-#define NF_SYNPROXY_OPT_WSCALE		0x02
-#define NF_SYNPROXY_OPT_SACK_PERM	0x04
-#define NF_SYNPROXY_OPT_TIMESTAMP	0x08
-#define NF_SYNPROXY_OPT_ECN		0x10
-#define NF_SYNPROXY_OPT_MASK		(NF_SYNPROXY_OPT_MSS | \
-					 NF_SYNPROXY_OPT_WSCALE | \
-					 NF_SYNPROXY_OPT_SACK_PERM | \
-					 NF_SYNPROXY_OPT_TIMESTAMP)
-
-struct nf_synproxy_info {
-	__u8	options;
-	__u8	wscale;
-	__u16	mss;
-};
-
-#endif /* _NF_SYNPROXY_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:2d517e48903e6d6e295e125e60a31e0d59f606676f4915e817aa218285a9722e
+size 576

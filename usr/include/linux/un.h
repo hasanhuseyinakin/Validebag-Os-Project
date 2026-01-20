@@ -1,16 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_UN_H
-#define _LINUX_UN_H
-
-#include <linux/socket.h>
-
-#define UNIX_PATH_MAX	108
-
-struct sockaddr_un {
-	__kernel_sa_family_t sun_family; /* AF_UNIX */
-	char sun_path[UNIX_PATH_MAX];	/* pathname */
-};
-
-#define SIOCUNIXFILE (SIOCPROTOPRIVATE + 0) /* open a socket file with O_PATH */
-
-#endif /* _LINUX_UN_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:368c182fde315a03c1de2054a950ac314daacf6118f26bba4c0da36344b8cf57
+size 384

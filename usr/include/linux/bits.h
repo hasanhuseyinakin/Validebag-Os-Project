@@ -1,14 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-/* bits.h: Macros for dealing with bitmasks.  */
-
-#ifndef _LINUX_BITS_H
-#define _LINUX_BITS_H
-
-#define __GENMASK(h, l) (((~_UL(0)) << (l)) & (~_UL(0) >> (__BITS_PER_LONG - 1 - (h))))
-
-#define __GENMASK_ULL(h, l) (((~_ULL(0)) << (l)) & (~_ULL(0) >> (__BITS_PER_LONG_LONG - 1 - (h))))
-
-#define __GENMASK_U128(h, l) \
-	((_BIT128((h)) << 1) - (_BIT128(l)))
-
-#endif /* _LINUX_BITS_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:33dd85a99b62451c7748878ee97e4eabdfb38d68e792b9058395bfdbb2b6ca4b
+size 444

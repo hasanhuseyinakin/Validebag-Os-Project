@@ -1,16 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __LINUX_RADEONFB_H__
-#define __LINUX_RADEONFB_H__
-
-#include <asm/ioctl.h>
-#include <linux/types.h>
-
-#define ATY_RADEON_LCD_ON	0x00000001
-#define ATY_RADEON_CRT_ON	0x00000002
-
-
-#define FBIO_RADEON_GET_MIRROR	_IOR('@', 3, size_t)
-#define FBIO_RADEON_SET_MIRROR	_IOW('@', 4, size_t)
-
-#endif
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:1e860b80b5fb8ab19374585c470c9410b9bfd2b2cff9572d5d674e2468b6760a
+size 360

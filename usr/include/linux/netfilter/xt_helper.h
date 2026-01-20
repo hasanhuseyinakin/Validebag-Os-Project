@@ -1,9 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _XT_HELPER_H
-#define _XT_HELPER_H
-
-struct xt_helper_info {
-	int invert;
-	char name[30];
-};
-#endif /* _XT_HELPER_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:f38165855ea138258996a53f67aff8f68d419643dfaedc72a571a84fbb995236
+size 188

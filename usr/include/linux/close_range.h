@@ -1,12 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_CLOSE_RANGE_H
-#define _LINUX_CLOSE_RANGE_H
-
-/* Unshare the file descriptor table before closing file descriptors. */
-#define CLOSE_RANGE_UNSHARE	(1U << 1)
-
-/* Set the FD_CLOEXEC bit instead of closing the file descriptor. */
-#define CLOSE_RANGE_CLOEXEC	(1U << 2)
-
-#endif /* _LINUX_CLOSE_RANGE_H */
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:54f02dee64fba028529c5265273d23a96629f3217d6abc31574ef7cce5a63f70
+size 377

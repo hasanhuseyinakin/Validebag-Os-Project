@@ -1,8 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_KERNEL_H
-#define _LINUX_KERNEL_H
-
-#include <linux/sysinfo.h>
-#include <linux/const.h>
-
-#endif /* _LINUX_KERNEL_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:f94c0d08edf34749a907ad2177ecaaaf6f3933d5f492ca5b7fe10a06179d4c77
+size 194

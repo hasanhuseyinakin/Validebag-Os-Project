@@ -1,9 +1,3 @@
-#ifndef __FILE_defined
-#define __FILE_defined 1
-
-struct _IO_FILE;
-
-/* The opaque type of streams.  This is the definition used elsewhere.  */
-typedef struct _IO_FILE FILE;
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:37515f78be386f2edad4746f2947c928f480728c56d9a94e25302ebbdaef3c96
+size 180

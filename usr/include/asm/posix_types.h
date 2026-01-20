@@ -1,8 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-# ifdef __i386__
-#  include <asm/posix_types_32.h>
-# elif defined(__ILP32__)
-#  include <asm/posix_types_x32.h>
-# else
-#  include <asm/posix_types_64.h>
-# endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:983090c7e5e7eaff27114ec216889a8ad26e40ad8fbb78b8ae6c09391dc61543
+size 224

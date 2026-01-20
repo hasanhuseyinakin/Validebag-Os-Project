@@ -1,11 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _XT_MAC_H
-#define _XT_MAC_H
-
-#include <linux/if_ether.h>
-
-struct xt_mac_info {
-    unsigned char srcaddr[ETH_ALEN];
-    int invert;
-};
-#endif /*_XT_MAC_H*/
+version https://git-lfs.github.com/spec/v1
+oid sha256:83c5e086f295bc8739c697c2a3e4fb2b080570aacd3378ad73e8f277804a933b
+size 227

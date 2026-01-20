@@ -1,22 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-/*
- * Copyright (c) 2022, Google LLC
- */
-
-#ifndef _LINUX_LOOP_LOADPIN_H
-#define _LINUX_LOOP_LOADPIN_H
-
-#define LOADPIN_IOC_MAGIC	'L'
-
-/**
- * LOADPIN_IOC_SET_TRUSTED_VERITY_DIGESTS - Set up the root digests of verity devices
- *                                          that loadpin should trust.
- *
- * Takes a file descriptor from which to read the root digests of trusted verity devices. The file
- * is expected to contain a list of digests in ASCII format, with one line per digest. The ioctl
- * must be issued on the securityfs attribute 'loadpin/dm-verity' (which can be typically found
- * under /sys/kernel/security/loadpin/dm-verity).
- */
-#define LOADPIN_IOC_SET_TRUSTED_VERITY_DIGESTS _IOW(LOADPIN_IOC_MAGIC, 0x00, unsigned int)
-
-#endif /* _LINUX_LOOP_LOADPIN_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:03a847493d7f94916bfa6e51fdb23a9b75720f45e92a9da24775e1bc0b432b51
+size 834

@@ -1,7 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _ASM_X86_BYTEORDER_H
-#define _ASM_X86_BYTEORDER_H
-
-#include <linux/byteorder/little_endian.h>
-
-#endif /* _ASM_X86_BYTEORDER_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:e8927b5fcab215111f961510cd8db7d5e4c76c8e8e4dd17ad3d1681fae04756c
+size 200

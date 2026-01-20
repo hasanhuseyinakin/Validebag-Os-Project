@@ -1,10 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _ASM_X86_MMAN_H
-#define _ASM_X86_MMAN_H
-
-#define MAP_32BIT	0x40		/* only give out 32bit addresses */
-#define MAP_ABOVE4G	0x80		/* only map above 4GB */
-
-#include <asm-generic/mman.h>
-
-#endif /* _ASM_X86_MMAN_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:03860accf95d407bd13c8ab952fc786137bc1668a3dcfef859eb1ee8669bdf1e
+size 284

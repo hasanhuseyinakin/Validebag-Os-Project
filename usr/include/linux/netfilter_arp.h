@@ -1,21 +1,3 @@
-/* SPDX-License-Identifier: GPL-1.0+ WITH Linux-syscall-note */
-#ifndef __LINUX_ARP_NETFILTER_H
-#define __LINUX_ARP_NETFILTER_H
-
-/* ARP-specific defines for netfilter.
- * (C)2002 Rusty Russell IBM -- This code is GPL.
- */
-
-#include <linux/netfilter.h>
-
-/* There is no PF_ARP. */
-#define NF_ARP		0
-
-/* ARP Hooks */
-#define NF_ARP_IN	0
-#define NF_ARP_OUT	1
-#define NF_ARP_FORWARD	2
-
-#define NF_ARP_NUMHOOKS	3
-
-#endif /* __LINUX_ARP_NETFILTER_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:1a9701711c0e8b29cc338744eec00a47408e05cc353446fe1d86a74678e97e2d
+size 445

@@ -1,24 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-/* atm_eni.h - Driver-specific declarations of the ENI driver (for use by
-	       driver-specific utilities) */
-
-/* Written 1995-2000 by Werner Almesberger, EPFL LRC/ICA */
-
-
-#ifndef LINUX_ATM_ENI_H
-#define LINUX_ATM_ENI_H
-
-#include <linux/atmioc.h>
-
-
-struct eni_multipliers {
-	int tx,rx;	/* values are in percent and must be > 100 */
-};
-
-
-#define ENI_MEMDUMP     _IOW('a',ATMIOC_SARPRV,struct atmif_sioc)
-                                                /* printk memory map */
-#define ENI_SETMULT	_IOW('a',ATMIOC_SARPRV+7,struct atmif_sioc)
-						/* set buffer multipliers */
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:79a4c6365a1339386b5da9683d3babf4d34a7a71d33e6ed2f483ba1fa205adbb
+size 648

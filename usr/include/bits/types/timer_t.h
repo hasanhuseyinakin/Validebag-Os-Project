@@ -1,9 +1,3 @@
-#ifndef __timer_t_defined
-#define __timer_t_defined 1
-
-#include <bits/types.h>
-
-/* Timer ID returned by `timer_create'.  */
-typedef __timer_t timer_t;
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:d96a2452da0d933941273d11d1048ea525f033306892835b0a7a0999b13853aa
+size 159

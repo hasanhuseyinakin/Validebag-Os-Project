@@ -1,18 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_VESA_H
-#define _LINUX_VESA_H
-
-/* VESA Blanking Levels */
-enum vesa_blank_mode {
-	VESA_NO_BLANKING	= 0,
-#define VESA_NO_BLANKING	VESA_NO_BLANKING
-	VESA_VSYNC_SUSPEND	= 1,
-#define VESA_VSYNC_SUSPEND	VESA_VSYNC_SUSPEND
-	VESA_HSYNC_SUSPEND	= 2,
-#define VESA_HSYNC_SUSPEND	VESA_HSYNC_SUSPEND
-	VESA_POWERDOWN		= VESA_VSYNC_SUSPEND | VESA_HSYNC_SUSPEND,
-#define VESA_POWERDOWN		VESA_POWERDOWN
-	VESA_BLANK_MAX		= VESA_POWERDOWN,
-};
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:9b6bc38f673ae57bbaa4e6a360ec6a44cb9c4163fbdb1db434a9548cbf9bad04
+size 510

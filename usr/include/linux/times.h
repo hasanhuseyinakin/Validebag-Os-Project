@@ -1,14 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_TIMES_H
-#define _LINUX_TIMES_H
-
-#include <linux/types.h>
-
-struct tms {
-	__kernel_clock_t tms_utime;
-	__kernel_clock_t tms_stime;
-	__kernel_clock_t tms_cutime;
-	__kernel_clock_t tms_cstime;
-};
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:515f93bf266325f24361c4fdd54efdb139052c8c64445c16fa8158b295f84875
+size 278

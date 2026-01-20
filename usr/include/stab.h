@@ -1,17 +1,3 @@
-#ifndef __GNU_STAB__
-
-/* Indicate the GNU stab.h is in use.  */
-
-#define __GNU_STAB__
-
-#define __define_stab(NAME, CODE, STRING) NAME=CODE,
-
-enum __stab_debug_code
-{
-#include <bits/stab.def>
-LAST_UNUSED_STAB_CODE
-};
-
-#undef __define_stab
-
-#endif /* __GNU_STAB_ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:3f4c1aa76470b5a7a97424c8d67b64fbb2891b6c1ba972ab544b1d9235b47a3e
+size 264

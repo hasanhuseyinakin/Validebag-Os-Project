@@ -1,4 +1,3 @@
-/* GNU ld script
-*/
-OUTPUT_FORMAT(elf64-x86-64)
-GROUP ( /usr/lib/libm.so.6  AS_NEEDED ( /usr/lib/libmvec.so.1 ) )
+version https://git-lfs.github.com/spec/v1
+oid sha256:258e8802b225f70a439bbe23d6ecd468a33ce8875a02a52846a7bb5d21ff34c3
+size 114

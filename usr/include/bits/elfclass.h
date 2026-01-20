@@ -1,14 +1,3 @@
-/* This file specifies the native word size of the machine, which indicates
-   the ELF file class used for executables and shared objects on this
-   machine.  */
-
-#ifndef _LINK_H
-# error "Never use <bits/elfclass.h> directly; include <link.h> instead."
-#endif
-
-#include <bits/wordsize.h>
-
-#define __ELF_NATIVE_CLASS __WORDSIZE
-
-/* The entries in the .hash table always have a size of 32 bits.  */
-typedef uint32_t Elf_Symndx;
+version https://git-lfs.github.com/spec/v1
+oid sha256:4de87067abd0016835a83633b715abc06c1beb7c10199626592077ffb6c27746
+size 426

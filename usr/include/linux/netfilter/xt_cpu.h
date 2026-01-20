@@ -1,12 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _XT_CPU_H
-#define _XT_CPU_H
-
-#include <linux/types.h>
-
-struct xt_cpu_info {
-	__u32	cpu;
-	__u32	invert;
-};
-
-#endif /*_XT_CPU_H*/
+version https://git-lfs.github.com/spec/v1
+oid sha256:eb4a2bc68cf946c08f37c1435cfc934d855cb484d12f2ee3215ebfd6adf7673b
+size 199

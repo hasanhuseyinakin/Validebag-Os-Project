@@ -1,16 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0-only WITH Linux-syscall-note */
-/*
- * Copyright (C) 2021 Intel Corporation.
- */
-#ifndef _WWAN_H_
-#define _WWAN_H_
-
-enum {
-	IFLA_WWAN_UNSPEC,
-	IFLA_WWAN_LINK_ID, /* u32 */
-
-	__IFLA_WWAN_MAX
-};
-#define IFLA_WWAN_MAX (__IFLA_WWAN_MAX - 1)
-
-#endif /* _WWAN_H_ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:c0d6eea87c88cb24bb15f66ec6918727a7f90d4241ab7bfcf62575a03405df1c
+size 295

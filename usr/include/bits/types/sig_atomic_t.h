@@ -1,10 +1,3 @@
-#ifndef __sig_atomic_t_defined
-#define __sig_atomic_t_defined 1
-
-#include <bits/types.h>
-
-/* An integral type that can be modified atomically, without the
-   possibility of a signal arriving in the middle of the operation.  */
-typedef __sig_atomic_t sig_atomic_t;
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:8c44b91c2eb6e509905e1becec6b98f8ac006709bfa5d85d86e34a46eb9013cc
+size 272

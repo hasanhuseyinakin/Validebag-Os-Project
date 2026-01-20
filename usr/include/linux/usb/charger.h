@@ -1,31 +1,3 @@
-/*
- * This file defines the USB charger type and state that are needed for
- * USB device APIs.
- */
-
-#ifndef __LINUX_USB_CHARGER_H
-#define __LINUX_USB_CHARGER_H
-
-/*
- * USB charger type:
- * SDP (Standard Downstream Port)
- * DCP (Dedicated Charging Port)
- * CDP (Charging Downstream Port)
- * ACA (Accessory Charger Adapters)
- */
-enum usb_charger_type {
-	UNKNOWN_TYPE = 0,
-	SDP_TYPE = 1,
-	DCP_TYPE = 2,
-	CDP_TYPE = 3,
-	ACA_TYPE = 4,
-};
-
-/* USB charger state */
-enum usb_charger_state {
-	USB_CHARGER_DEFAULT = 0,
-	USB_CHARGER_PRESENT = 1,
-	USB_CHARGER_ABSENT = 2,
-};
-
-#endif /* __LINUX_USB_CHARGER_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:3977c64981038d48fea9c1a8cb59a42820859a8fa61321442a435aae6805a0c2
+size 598

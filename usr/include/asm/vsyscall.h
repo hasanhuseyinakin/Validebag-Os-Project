@@ -1,13 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _ASM_X86_VSYSCALL_H
-#define _ASM_X86_VSYSCALL_H
-
-enum vsyscall_num {
-	__NR_vgettimeofday,
-	__NR_vtime,
-	__NR_vgetcpu,
-};
-
-#define VSYSCALL_ADDR (-10UL << 20)
-
-#endif /* _ASM_X86_VSYSCALL_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:3c788108fb83ed76a25fce9ca5c700bd05d6dbea983adfb89a92c5c5f8acf7b8
+size 263

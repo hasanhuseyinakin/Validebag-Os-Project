@@ -1,16 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-/*
- * Copyright (c) 2015-2018, Intel Corporation.
- */
-
-#ifndef _LINUX_IPMI_BMC_H
-#define _LINUX_IPMI_BMC_H
-
-#include <linux/ioctl.h>
-
-#define __IPMI_BMC_IOCTL_MAGIC        0xB1
-#define IPMI_BMC_IOCTL_SET_SMS_ATN    _IO(__IPMI_BMC_IOCTL_MAGIC, 0x00)
-#define IPMI_BMC_IOCTL_CLEAR_SMS_ATN  _IO(__IPMI_BMC_IOCTL_MAGIC, 0x01)
-#define IPMI_BMC_IOCTL_FORCE_ABORT    _IO(__IPMI_BMC_IOCTL_MAGIC, 0x02)
-
-#endif /* _LINUX_IPMI_BMC_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:a44a04967c79d3bfb9f5c71a77983f4afa2022c3944b351a6a3f05629b715083
+size 488

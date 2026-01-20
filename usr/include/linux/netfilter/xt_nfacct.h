@@ -1,19 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _XT_NFACCT_MATCH_H
-#define _XT_NFACCT_MATCH_H
-
-#include <linux/netfilter/nfnetlink_acct.h>
-
-struct nf_acct;
-
-struct xt_nfacct_match_info {
-	char		name[NFACCT_NAME_MAX];
-	struct nf_acct	*nfacct;
-};
-
-struct xt_nfacct_match_info_v1 {
-	char		name[NFACCT_NAME_MAX];
-	struct nf_acct	*nfacct __attribute__((aligned(8)));
-};
-
-#endif /* _XT_NFACCT_MATCH_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:ee791b4d8b8e4406262fa8c61d88c2cadcbd8bb430bfa553f7b306e0b6855102
+size 421

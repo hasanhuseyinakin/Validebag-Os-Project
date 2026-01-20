@@ -1,15 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _XT_SYNPROXY_H
-#define _XT_SYNPROXY_H
-
-#include <linux/netfilter/nf_synproxy.h>
-
-#define XT_SYNPROXY_OPT_MSS		NF_SYNPROXY_OPT_MSS
-#define XT_SYNPROXY_OPT_WSCALE		NF_SYNPROXY_OPT_WSCALE
-#define XT_SYNPROXY_OPT_SACK_PERM	NF_SYNPROXY_OPT_SACK_PERM
-#define XT_SYNPROXY_OPT_TIMESTAMP	NF_SYNPROXY_OPT_TIMESTAMP
-#define XT_SYNPROXY_OPT_ECN		NF_SYNPROXY_OPT_ECN
-
-#define xt_synproxy_info		nf_synproxy_info
-
-#endif /* _XT_SYNPROXY_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:2b7aa8f7a5036b37f23603fb8e23525fe34a6574c7e2e91e7006ee81b48eff22
+size 498

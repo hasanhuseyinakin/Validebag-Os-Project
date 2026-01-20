@@ -1,29 +1,3 @@
-/* Copyright (C) 1998-2025 Free Software Foundation, Inc.
-   This file is part of the GNU C Library.
-
-   The GNU C Library is free software; you can redistribute it and/or
-   modify it under the terms of the GNU Lesser General Public
-   License as published by the Free Software Foundation; either
-   version 2.1 of the License, or (at your option) any later version.
-
-   The GNU C Library is distributed in the hope that it will be useful,
-   but WITHOUT ANY WARRANTY; without even the implied warranty of
-   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-   Lesser General Public License for more details.
-
-   You should have received a copy of the GNU Lesser General Public
-   License along with the GNU C Library; if not, see
-   <https://www.gnu.org/licenses/>.  */
-
-#ifndef _SYS_ELF_H
-#define _SYS_ELF_H	1
-
-#ifdef __x86_64__
-# error This header is unsupported on x86-64.
-#else
-# warning "This header is obsolete; use <sys/procfs.h> instead."
-
-# include <sys/procfs.h>
-#endif
-
-#endif	/* _SYS_ELF_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:a16ed0d4deaac9a2d436869218831e28b9039a73d9a2ce1391c114cac2fa25a4
+size 1024

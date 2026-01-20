@@ -1,13 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __LINUX_BRIDGE_EBT_PKTTYPE_H
-#define __LINUX_BRIDGE_EBT_PKTTYPE_H
-
-#include <linux/types.h>
-
-struct ebt_pkttype_info {
-	__u8 pkt_type;
-	__u8 invert;
-};
-#define EBT_PKTTYPE_MATCH "pkttype"
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:3bde927917aafc387857a599c53100577be8e04229c96fc140e9e608324e5c6d
+size 267

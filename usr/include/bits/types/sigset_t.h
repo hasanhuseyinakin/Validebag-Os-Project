@@ -1,9 +1,3 @@
-#ifndef __sigset_t_defined
-#define __sigset_t_defined 1
-
-#include <bits/types/__sigset_t.h>
-
-/* A set of signals to be blocked, unblocked, or waited for.  */
-typedef __sigset_t sigset_t;
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:3db5ded9d98a694e8c7196a06690b2e816ec6bb82689940d281f6504533f37e1
+size 195

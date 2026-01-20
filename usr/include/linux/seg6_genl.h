@@ -1,33 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_SEG6_GENL_H
-#define _LINUX_SEG6_GENL_H
-
-#define SEG6_GENL_NAME		"SEG6"
-#define SEG6_GENL_VERSION	0x1
-
-enum {
-	SEG6_ATTR_UNSPEC,
-	SEG6_ATTR_DST,
-	SEG6_ATTR_DSTLEN,
-	SEG6_ATTR_HMACKEYID,
-	SEG6_ATTR_SECRET,
-	SEG6_ATTR_SECRETLEN,
-	SEG6_ATTR_ALGID,
-	SEG6_ATTR_HMACINFO,
-	__SEG6_ATTR_MAX,
-};
-
-#define SEG6_ATTR_MAX (__SEG6_ATTR_MAX - 1)
-
-enum {
-	SEG6_CMD_UNSPEC,
-	SEG6_CMD_SETHMAC,
-	SEG6_CMD_DUMPHMAC,
-	SEG6_CMD_SET_TUNSRC,
-	SEG6_CMD_GET_TUNSRC,
-	__SEG6_CMD_MAX,
-};
-
-#define SEG6_CMD_MAX (__SEG6_CMD_MAX - 1)
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:92817e3b9d7a7c089697be3ffeae05266bc37a92fc5798658c7510bafea26822
+size 589

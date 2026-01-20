@@ -1,16 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __IP_SET_BITMAP_H
-#define __IP_SET_BITMAP_H
-
-#include <linux/netfilter/ipset/ip_set.h>
-
-/* Bitmap type specific error codes */
-enum {
-	/* The element is out of the range of the set */
-	IPSET_ERR_BITMAP_RANGE = IPSET_ERR_TYPE_SPECIFIC,
-	/* The range exceeds the size limit of the set type */
-	IPSET_ERR_BITMAP_RANGE_SIZE,
-};
-
-
-#endif /* __IP_SET_BITMAP_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:76cd0f830958792185b625100a21c930fcf1ea3f27c1010e75bc33f1920e8070
+size 428

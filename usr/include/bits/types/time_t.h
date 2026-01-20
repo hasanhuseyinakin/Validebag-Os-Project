@@ -1,13 +1,3 @@
-#ifndef __time_t_defined
-#define __time_t_defined 1
-
-#include <bits/types.h>
-
-/* Returned by `time'.  */
-#ifdef __USE_TIME64_REDIRECTS
-typedef __time64_t time_t;
-#else
-typedef __time_t time_t;
-#endif
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:d1cc45e24a80009117f61ee4ae9cae5d12f69f38d691e0a933f989f7a1d27bb0
+size 208

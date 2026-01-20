@@ -1,10 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_UNISTD_H_
-#define _LINUX_UNISTD_H_
-
-/*
- * Include machine specific syscall numbers
- */
-#include <asm/unistd.h>
-
-#endif /* _LINUX_UNISTD_H_ */
+version https://git-lfs.github.com/spec/v1
+oid sha256:01a6f7628ed6f3511eade5891e631c05679e141d031e689a6d028e840032e394
+size 220

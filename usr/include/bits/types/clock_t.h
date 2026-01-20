@@ -1,9 +1,3 @@
-#ifndef __clock_t_defined
-#define __clock_t_defined 1
-
-#include <bits/types.h>
-
-/* Returned by `clock'.  */
-typedef __clock_t clock_t;
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:81e60e8a8d99b28bc723c14b156d7f7fc8ff663d98a857a3f5aea90431f577e3
+size 143

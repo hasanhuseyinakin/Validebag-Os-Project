@@ -1,14 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_BLKDEV_H
-#define _LINUX_BLKDEV_H
-
-#include <linux/ioctl.h>
-#include <linux/types.h>
-
-/*
- * io_uring block file commands, see IORING_OP_URING_CMD.
- * It's a different number space from ioctl(), reuse the block's code 0x12.
- */
-#define BLOCK_URING_CMD_DISCARD			_IO(0x12, 0)
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:fee05c6d8fd1f44f5257e63d47429c138bcfc951134257277829899590e7e6a0
+size 359

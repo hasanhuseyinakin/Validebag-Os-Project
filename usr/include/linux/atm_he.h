@@ -1,21 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-/* atm_he.h */
-
-#ifndef LINUX_ATM_HE_H
-#define LINUX_ATM_HE_H
-
-#include <linux/atmioc.h>
-
-#define HE_GET_REG	_IOW('a', ATMIOC_SARPRV, struct atmif_sioc)
-
-#define HE_REGTYPE_PCI	1
-#define HE_REGTYPE_RCM	2
-#define HE_REGTYPE_TCM	3
-#define HE_REGTYPE_MBOX	4
-
-struct he_ioctl_reg {
-	unsigned addr, val;
-	char type;
-};
-
-#endif /* LINUX_ATM_HE_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:bf994dfeebfc08d466da93a80e84c1b170fc702de95f4ed845db09cd4e912bc9
+size 406

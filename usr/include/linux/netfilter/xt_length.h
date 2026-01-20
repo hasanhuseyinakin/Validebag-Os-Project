@@ -1,12 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _XT_LENGTH_H
-#define _XT_LENGTH_H
-
-#include <linux/types.h>
-
-struct xt_length_info {
-    __u16	min, max;
-    __u8	invert;
-};
-
-#endif /*_XT_LENGTH_H*/
+version https://git-lfs.github.com/spec/v1
+oid sha256:177ab31a4ae591abda690c52d31c6ad08ed131fcacad409d5fe155cd82aaaff1
+size 221

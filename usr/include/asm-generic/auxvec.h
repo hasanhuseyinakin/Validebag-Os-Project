@@ -1,8 +1,3 @@
-#ifndef __ASM_GENERIC_AUXVEC_H
-#define __ASM_GENERIC_AUXVEC_H
-/*
- * Not all architectures need their own auxvec.h, the most
- * common definitions are already in linux/auxvec.h.
- */
-
-#endif /* __ASM_GENERIC_AUXVEC_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:5cb37d9f62fff24b2cf57dbd5d319e5c42e2880d5b70d8b17e1288dbc11a3050
+size 218

@@ -1,12 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_UTIME_H
-#define _LINUX_UTIME_H
-
-#include <linux/types.h>
-
-struct utimbuf {
-	__kernel_old_time_t actime;
-	__kernel_old_time_t modtime;
-};
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:ebfbbccbe09e5af982ef926edfb17c6955b1e23a1f8b52fdfef5a4e007feb992
+size 223

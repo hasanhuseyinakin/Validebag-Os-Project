@@ -1,13 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _ASM_X86_HWCAP2_H
-#define _ASM_X86_HWCAP2_H
-
-#include <linux/const.h>
-
-/* MONITOR/MWAIT enabled in Ring 3 */
-#define HWCAP2_RING3MWAIT		_BITUL(0)
-
-/* Kernel allows FSGSBASE instructions available in Ring 3 */
-#define HWCAP2_FSGSBASE			_BITUL(1)
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:1249353c3203061950199a0e195b9d984ddee2a1ad8a22c88503433c19b0f902
+size 324

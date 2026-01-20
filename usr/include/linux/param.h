@@ -1,7 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_PARAM_H
-#define _LINUX_PARAM_H
-
-#include <asm/param.h>
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:75c3c810ab5732ae2bca3d5947821db5e61d203ba3b00f658472232295d66849
+size 141

@@ -1,11 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __LINUX_BRIDGE_EBT_REDIRECT_H
-#define __LINUX_BRIDGE_EBT_REDIRECT_H
-
-struct ebt_redirect_info {
-	/* EBT_ACCEPT, EBT_DROP, EBT_CONTINUE or EBT_RETURN */
-	int target;
-};
-#define EBT_REDIRECT_TARGET "redirect"
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:3f53f5c7520838bdfdd151232a2ad7eaadb084bff4d8940a8bb659b31a938610
+size 286

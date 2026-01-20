@@ -1,11 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _XT_CLASSIFY_H
-#define _XT_CLASSIFY_H
-
-#include <linux/types.h>
-
-struct xt_classify_target_info {
-	__u32 priority;
-};
-
-#endif /*_XT_CLASSIFY_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:f8935b2fd059b7ed60b244790845492505e5f0a08e5837da4b547244b0893a56
+size 217

@@ -1,16 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _ASM_X86_ELF_H
-#define _ASM_X86_ELF_H
-
-#include <linux/types.h>
-
-struct x86_xfeat_component {
-	__u32 type;
-	__u32 size;
-	__u32 offset;
-	__u32 flags;
-} __attribute__((packed));
-
-_Static_assert(sizeof(struct x86_xfeat_component) % 4 == 0, "x86_xfeat_component is not aligned");
-
-#endif /* _ASM_X86_ELF_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:57eb973b6f9c581a0931570dba56a7b23b6d0d0405f13de21c70eb2c4dc7d16f
+size 376

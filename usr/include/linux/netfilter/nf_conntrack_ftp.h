@@ -1,19 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _NF_CONNTRACK_FTP_H
-#define _NF_CONNTRACK_FTP_H
-/* FTP tracking. */
-
-/* This enum is exposed to userspace */
-enum nf_ct_ftp_type {
-	/* PORT command from client */
-	NF_CT_FTP_PORT,
-	/* PASV response from server */
-	NF_CT_FTP_PASV,
-	/* EPRT command from client */
-	NF_CT_FTP_EPRT,
-	/* EPSV response from server */
-	NF_CT_FTP_EPSV,
-};
-
-
-#endif /* _NF_CONNTRACK_FTP_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:d9f0f52603804762d2ccedc5a8bb7a29866c9e0943adc5de1c73e7d88e5c6808
+size 438

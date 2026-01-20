@@ -1,9 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __LINUX_ARCFB_H__
-#define __LINUX_ARCFB_H__
-
-#define FBIO_WAITEVENT		_IO('F', 0x88)
-#define FBIO_GETCONTROL2	_IOR('F', 0x89, size_t)
-
-#endif
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:28b3ebc0ce8c04f23453a63e0f9a0149e4c2222e9e7aa6f53e96d27d733209c1
+size 213

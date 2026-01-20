@@ -1,30 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _XT_MULTIPORT_H
-#define _XT_MULTIPORT_H
-
-#include <linux/types.h>
-
-enum xt_multiport_flags {
-	XT_MULTIPORT_SOURCE,
-	XT_MULTIPORT_DESTINATION,
-	XT_MULTIPORT_EITHER
-};
-
-#define XT_MULTI_PORTS	15
-
-/* Must fit inside union xt_matchinfo: 16 bytes */
-struct xt_multiport {
-	__u8 flags;				/* Type of comparison */
-	__u8 count;				/* Number of ports */
-	__u16 ports[XT_MULTI_PORTS];	/* Ports */
-};
-
-struct xt_multiport_v1 {
-	__u8 flags;				/* Type of comparison */
-	__u8 count;				/* Number of ports */
-	__u16 ports[XT_MULTI_PORTS];	/* Ports */
-	__u8 pflags[XT_MULTI_PORTS];	/* Port flags */
-	__u8 invert;			/* Invert flag */
-};
-
-#endif /*_XT_MULTIPORT_H*/
+version https://git-lfs.github.com/spec/v1
+oid sha256:d53077457224805c1925daa9fb12135455e8633609b1fe95f15e3d11b3f0e652
+size 721

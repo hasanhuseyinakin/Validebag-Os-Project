@@ -1,12 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _LINUX_KDEV_T_H
-#define _LINUX_KDEV_T_H
-
-/*
-Some programs want their definitions of MAJOR and MINOR and MKDEV
-from the kernel sources. These must be the externally visible ones.
-*/
-#define MAJOR(dev)	((dev)>>8)
-#define MINOR(dev)	((dev) & 0xff)
-#define MKDEV(ma,mi)	((ma)<<8 | (mi))
-#endif /* _LINUX_KDEV_T_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:2543adaa81bb8c149dc91e9186e6b0fd4f5f465b75daba47d20c36df78c1f43a
+size 383

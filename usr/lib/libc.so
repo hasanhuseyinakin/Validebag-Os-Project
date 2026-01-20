@@ -1,5 +1,3 @@
-/* GNU ld script
-   Use the shared library, but some functions are only in
-   the static library, so try that secondarily.  */
-OUTPUT_FORMAT(elf64-x86-64)
-GROUP ( /usr/lib/libc.so.6 /usr/lib/libc_nonshared.a  AS_NEEDED ( /usr/lib/ld-linux-x86-64.so.2 ) )
+version https://git-lfs.github.com/spec/v1
+oid sha256:362665345c2d0149815700776a1e3e1a7fff45ab16f32352dbe224c55d12c964
+size 255

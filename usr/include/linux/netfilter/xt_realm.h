@@ -1,13 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _XT_REALM_H
-#define _XT_REALM_H
-
-#include <linux/types.h>
-
-struct xt_realm_info {
-	__u32 id;
-	__u32 mask;
-	__u8 invert;
-};
-
-#endif /* _XT_REALM_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:1e874bde99334a1bf72617b783048266db6bbe0ad90773dacd6b9bc5ce51086c
+size 220

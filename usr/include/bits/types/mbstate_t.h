@@ -1,8 +1,3 @@
-#ifndef __mbstate_t_defined
-#define __mbstate_t_defined 1
-
-#include <bits/types/__mbstate_t.h>
-
-typedef __mbstate_t mbstate_t;
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:c0608830973c4e1a71219e477b470b7ed77b211dc870410776ec13a1b7bb759a
+size 135

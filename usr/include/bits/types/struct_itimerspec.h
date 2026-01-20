@@ -1,14 +1,3 @@
-#ifndef __itimerspec_defined
-#define __itimerspec_defined 1
-
-#include <bits/types.h>
-#include <bits/types/struct_timespec.h>
-
-/* POSIX.1b structure for timer start values and intervals.  */
-struct itimerspec
-  {
-    struct timespec it_interval;
-    struct timespec it_value;
-  };
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:d6299fbc46fc57e7d14635cd5cf69125710ed021ab7305586c84644a03a39f8e
+size 288

@@ -1,25 +1,3 @@
-/* Data structure for communication from the run-time dynamic linker for
-   loaded ELF shared objects.  LAV_CURRENT definition.
-   Copyright (C) 2021-2025 Free Software Foundation, Inc.
-   This file is part of the GNU C Library.
-
-   The GNU C Library is free software; you can redistribute it and/or
-   modify it under the terms of the GNU Lesser General Public
-   License as published by the Free Software Foundation; either
-   version 2.1 of the License, or (at your option) any later version.
-
-   The GNU C Library is distributed in the hope that it will be useful,
-   but WITHOUT ANY WARRANTY; without even the implied warranty of
-   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-   Lesser General Public License for more details.
-
-   You should have received a copy of the GNU Lesser General Public
-   License along with the GNU C Library; if not, see
-   <https://www.gnu.org/licenses/>.  */
-
-#ifndef _LINK_H
-# error "Never include <bits/link_lavcurrent.h> directly; use <link.h> instead."
-#endif
-
-/* Version numbers for la_version handshake interface.  */
-#define LAV_CURRENT	2
+version https://git-lfs.github.com/spec/v1
+oid sha256:f29b443b54d65da8d8d95a732e98a6daf786d767e8ad927ed91192f97029fa75
+size 1104

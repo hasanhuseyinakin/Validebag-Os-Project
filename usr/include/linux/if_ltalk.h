@@ -1,10 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __LINUX_LTALK_H
-#define __LINUX_LTALK_H
-
-#define LTALK_HLEN		1
-#define LTALK_MTU		600
-#define LTALK_ALEN		1
-
-
-#endif /* __LINUX_LTALK_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:b8fba39c334db10f2690095e7d8ceacf79d8ece62e0fd1dc361eddd72e880f65
+size 210

@@ -1,5 +1,3 @@
-#define LINUX_VERSION_CODE 397313
-#define KERNEL_VERSION(a,b,c) (((a) << 16) + ((b) << 8) + ((c) > 255 ? 255 : (c)))
-#define LINUX_VERSION_MAJOR 6
-#define LINUX_VERSION_PATCHLEVEL 16
-#define LINUX_VERSION_SUBLEVEL 1
+version https://git-lfs.github.com/spec/v1
+oid sha256:13a1a418760782f23246cafd7a84c780241e34f82f73202d36214fc90ee0f96c
+size 216

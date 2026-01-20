@@ -1,22 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __UAPI_TC_CONNMARK_H
-#define __UAPI_TC_CONNMARK_H
-
-#include <linux/types.h>
-#include <linux/pkt_cls.h>
-
-struct tc_connmark {
-	tc_gen;
-	__u16 zone;
-};
-
-enum {
-	TCA_CONNMARK_UNSPEC,
-	TCA_CONNMARK_PARMS,
-	TCA_CONNMARK_TM,
-	TCA_CONNMARK_PAD,
-	__TCA_CONNMARK_MAX
-};
-#define TCA_CONNMARK_MAX (__TCA_CONNMARK_MAX - 1)
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:5adc6f644ed2d70d6a2156d903f1ade14ab1cfc3bffba19db67ba4d8073aee70
+size 390

@@ -1,7 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _XT_CONNMARK_H_target
-#define _XT_CONNMARK_H_target
-
-#include <linux/netfilter/xt_connmark.h>
-
-#endif /*_XT_CONNMARK_H_target*/
+version https://git-lfs.github.com/spec/v1
+oid sha256:e15d96fe80c7dbe980e0620920161e667af83993399e7cbb74f30957088ea204
+size 199

@@ -1,20 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __ASM_GENERIC_PARAM_H
-#define __ASM_GENERIC_PARAM_H
-
-#ifndef HZ
-#define HZ 100
-#endif
-
-#ifndef EXEC_PAGESIZE
-#define EXEC_PAGESIZE	4096
-#endif
-
-#ifndef NOGROUP
-#define NOGROUP		(-1)
-#endif
-
-#define MAXHOSTNAMELEN	64	/* max length of hostname */
-
-
-#endif /* __ASM_GENERIC_PARAM_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:9d3d4f3912ec8f1ee67dcb00c63d6f7f9afb11b7ceb56785e8d97ebf794f307f
+size 353

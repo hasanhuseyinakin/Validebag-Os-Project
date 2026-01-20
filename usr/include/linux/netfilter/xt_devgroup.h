@@ -1,22 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _XT_DEVGROUP_H
-#define _XT_DEVGROUP_H
-
-#include <linux/types.h>
-
-enum xt_devgroup_flags {
-	XT_DEVGROUP_MATCH_SRC	= 0x1,
-	XT_DEVGROUP_INVERT_SRC	= 0x2,
-	XT_DEVGROUP_MATCH_DST	= 0x4,
-	XT_DEVGROUP_INVERT_DST	= 0x8,
-};
-
-struct xt_devgroup_info {
-	__u32	flags;
-	__u32	src_group;
-	__u32	src_mask;
-	__u32	dst_group;
-	__u32	dst_mask;
-};
-
-#endif /* _XT_DEVGROUP_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:57a7b31fa0e194c85909fcd9547fd7ed051031f2e5f1588c15d9b5ada7841cf6
+size 429

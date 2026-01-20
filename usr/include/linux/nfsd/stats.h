@@ -1,18 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-/*
- * linux/include/linux/nfsd/stats.h
- *
- * Statistics for NFS server.
- *
- * Copyright (C) 1995, 1996 Olaf Kirch <okir@monad.swb.de>
- */
-
-#ifndef LINUX_NFSD_STATS_H
-#define LINUX_NFSD_STATS_H
-
-#include <linux/nfs4.h>
-
-/* thread usage wraps very million seconds (approx one fortnight) */
-#define	NFSD_USAGE_WRAP	(HZ*1000000)
-
-#endif /* LINUX_NFSD_STATS_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:14efd19a691971a98f28d4a8beb3449629724fab4a4ae579ac5684a3cbb99488
+size 421

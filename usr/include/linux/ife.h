@@ -1,19 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __UAPI_IFE_H
-#define __UAPI_IFE_H
-
-#define IFE_METAHDRLEN 2
-
-enum {
-	IFE_META_SKBMARK = 1,
-	IFE_META_HASHID,
-	IFE_META_PRIO,
-	IFE_META_QMAP,
-	IFE_META_TCINDEX,
-	__IFE_META_MAX
-};
-
-/*Can be overridden at runtime by module option*/
-#define IFE_META_MAX (__IFE_META_MAX - 1)
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:64f64c777c6dcf961bf3d3fc9be609b44a6a2441f283625aef09a27ed2c1cf4d
+size 351

@@ -1,24 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-/* IP tables module for matching the value of the TTL
- * (C) 2000 by Harald Welte <laforge@gnumonks.org> */
-
-#ifndef _IPT_TTL_H
-#define _IPT_TTL_H
-
-#include <linux/types.h>
-
-enum {
-	IPT_TTL_EQ = 0,		/* equals */
-	IPT_TTL_NE,		/* not equals */
-	IPT_TTL_LT,		/* less than */
-	IPT_TTL_GT,		/* greater than */
-};
-
-
-struct ipt_ttl_info {
-	__u8	mode;
-	__u8	ttl;
-};
-
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:4a65de567a2b659c32538b0b07da545caf2b30e2cf026c20680c006bd951df72
+size 431

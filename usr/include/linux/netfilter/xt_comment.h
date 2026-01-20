@@ -1,11 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _XT_COMMENT_H
-#define _XT_COMMENT_H
-
-#define XT_MAX_COMMENT_LEN 256
-
-struct xt_comment_info {
-	char comment[XT_MAX_COMMENT_LEN];
-};
-
-#endif /* XT_COMMENT_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:d77fa0bf278a976bda1a8d93f65586e07be36beedbac67633b4e5d6cf56facf0
+size 230

@@ -1,18 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0-only WITH Linux-syscall-note*/
-/*
- * Copyright (c) 2022, Ampere Computing LLC.
- */
-
-#ifndef _LINUX_IPMI_SSIF_BMC_H
-#define _LINUX_IPMI_SSIF_BMC_H
-
-#include <linux/types.h>
-
-/* Max length of ipmi ssif message included netfn and cmd field */
-#define IPMI_SSIF_PAYLOAD_MAX         254
-struct ipmi_ssif_msg {
-	unsigned int len;
-	__u8    payload[IPMI_SSIF_PAYLOAD_MAX];
-};
-
-#endif /* _LINUX_IPMI_SSIF_BMC_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:ecf8896db57cf4116084c3b74885194ba8d2973e6d7ff3c2945cff2a7a847163
+size 441

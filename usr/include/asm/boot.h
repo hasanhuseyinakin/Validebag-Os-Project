@@ -1,11 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _ASM_X86_BOOT_H
-#define _ASM_X86_BOOT_H
-
-/* Internal svga startup constants */
-#define NORMAL_VGA	0xffff		/* 80x25 mode */
-#define EXTENDED_VGA	0xfffe		/* 80x50 mode */
-#define ASK_VGA		0xfffd		/* ask for it at bootup */
-
-
-#endif /* _ASM_X86_BOOT_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:b0b8a0eb71fe00ff4de557b8c860e8d00363c7611dc2747663233baf5f7f15a1
+size 323

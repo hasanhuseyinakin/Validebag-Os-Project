@@ -1,9 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef _ASM_X86_SIGCONTEXT32_H
-#define _ASM_X86_SIGCONTEXT32_H
-
-/* This is a legacy file - all the type definitions are in sigcontext.h: */
-
-#include <asm/sigcontext.h>
-
-#endif /* _ASM_X86_SIGCONTEXT32_H */
+version https://git-lfs.github.com/spec/v1
+oid sha256:4ee7224306979cb76ef8a233ad248eb02bb2126380fdb9d7f91387393d56a248
+size 271

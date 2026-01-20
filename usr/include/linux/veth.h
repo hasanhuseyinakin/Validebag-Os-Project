@@ -1,13 +1,3 @@
-/* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note */
-#ifndef __NET_VETH_H_
-#define __NET_VETH_H_
-
-enum {
-	VETH_INFO_UNSPEC,
-	VETH_INFO_PEER,
-
-	__VETH_INFO_MAX
-#define VETH_INFO_MAX	(__VETH_INFO_MAX - 1)
-};
-
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:ce185c9ad6bfae75895ced4fb442102f0a59008deff4d0bf18f2b10159df4a5f
+size 224
