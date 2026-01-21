@@ -8,7 +8,7 @@ As computers have become central to modern life, Linux has emerged as a key open
 
 
 
-The following packages and their upstream maintainers are acknowledged for their work, forming the foundation of Validebağ‑OS:
+The following packages and their upstream maintainers are acknowledged for their workon their packages that formed the foundation of Validebağ‑OS:
 
 
 -Python‑3.13.7: Python core developers / Python Software Foundation (CPython upstream)
