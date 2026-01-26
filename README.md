@@ -1,4 +1,4 @@
-<p align="center"><img src="/img/smalllogo.png" alt="validebagos Logo"></p>
+<p align="center"><img src="/img/smalllogo.png" alt="validebagos logo" width="150"></p>
 
 <h1 align="center">Validebag Os 0.4 Alpha Version</h1>
 
