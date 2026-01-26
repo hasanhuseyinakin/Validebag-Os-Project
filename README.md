@@ -14,47 +14,66 @@
 
 1. Before installing the os onto your machine, you need to have a empty partition. It needs to have at least 25 GB storage. When you make sure you have, you can go on with the installation process.
 
-   - **At first, you need to create a mounting point on your hostsytem. You can create it with this command:**:
+   - **At first, you need  a mounting point on your hostsytem. You can copy the os files to mountponit with this command**:
      ```
-     mkdir /mnt/validebagos
+     cp Validebag-Os-Project /mnt/validebagos
      ```
 
-2. After creating the directory, you need to create a varibale to simplify the installation guide.
-   - **You can create the variable with this command:**:
+2. After creating the mount directory, you need to create a varibale to simplify the installation guide.
+   - **You can create the variable with this command**:
      ```
      export validebagos=/mnt/validebagos
      ```
 
 3. After creating the variable, you need to set umask in case your distro uses a different one.
-   - **You can set umask with this command:**:
+   - **You can set umask with this command**:
      ```
      umask 022
      ```
 
 
 #Note: After each time you close or open a new terminal, you might need to set the umask and variable again. For making sure it is set correctly use this command:
-   - **You can set check the variable and umask with this command:**:
+   - **You can set check the variable and umask with this command**:
      ```
      echo $validebagos
      umask
      ```
 
 4. After checking the variable, you now need to mount your disk into the mountpoint.
-   - **Use this command to make your variable a mountpoint:**:
+   - **Use this command to make your variable a mountpoint**:
      ```
      mkdir -pv $validebagos
      ```	
-   - **After creating the mountpoint, use this command to mount your disk:**:
+   - **After creating the mountpoint, use this command to mount your disk**:
      ```
      mount -v -t ext4 /dev/sda(yourdisknumber) $validebagos
-     `` 
+     ``` 
 
-5. After that, you need to be root user to continue. When you become root user, make sure to change the ownership of validebag os folder to root user.
- - **You can change the ownership with this command:**:
+5. After that, you need to be root user to continue. When you become root user, first check the variable and umask again, then make sure that you changed the ownership of validebag os folder to root user.
+ - **You can be root user and change the ownership with this commands**:
      ```
+     sudo su
      chown -R root:root $validebagos
      case $(uname -m) in
      x86_64) chown -R root:root $validebagos/lib64 ;;
+     esac
+     ```
+- **Now change into the directory with this command**:
+     ```
+     cd $validebagos
+     ```
+
+6. After that, now we need to create some directories to continue. Do not skip without creating this folders or your installation will fail. 
+- **Create those directories with this commands**:
+     ```
+     mkdir -pv $validebagos/{etc,var} $validebagos/usr/{bin,lib,sbin}
+
+     for i in bin lib sbin; do
+       ln -sv usr/$i $validebagos/$i
+     done
+
+     case $(uname -m) in
+       x86_64) mkdir -pv $validebagos/lib64 ;;
      esac
      ```
 
