@@ -1,6 +1,0 @@
-mkdir /mnt/validebagos
-export validebagos=/mnt/validebagos
-umask 022
-
-echo $validebagos
-umask
