@@ -1,6 +1,6 @@
 <p align="center"><img src="/img/smalllogo.png" alt="validebagos logo" width="150"></p>
 
-<h1 align="center">Validebag Os 0.4 Alpha Version</h1>
+<h1 align="center">Validebag Os 0.4 Beta Version</h1>
 
 <p align="center">Validebag-OS is a lightweight Linux distribution currently in alpha, designed specifically for students.
  It is built from scratch to run efficiently on low-resource hardware and offers Turkish language support. 
