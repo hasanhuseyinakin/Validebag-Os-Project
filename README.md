@@ -171,9 +171,70 @@
      chmod -v 600  /var/log/btmp
      ```
 
+10. As the last step, now we need to delete a single file on your system because it may cause trouble you in the future. Also do not skip without creating this symlinks or your installation might fail.
+- **You can delete the file with this command**:
+     ```
+     find /usr/{lib,libexec} -name \*.la -delete
+     ```
 
 
+## What to do now?
+At first, congragulations, you just finished a simple preparing the system part in Linux From Scratch. As the Validebag-Os team, we are proud of you. We are continiously trying our best to made it easier and less time consuming for you. We are still working on this project but with your participation into our Distrubition, our family keeps growing :) After all this steps, there are two ways for you to choose from.
 
 
+### First way: Compile the kernel and boot into your Operating System.
 
+1. If you choose this way, you are now so close to finish this job. Now you need to go to the sources folder and find the package named linux-6.16.1.tar.xz this package is our Linux Kernel İmage we choose for you. Now continue with this steps:
+- **Make your system ready for compilation**:
+     ```
+     make mrproper
+     ```
+
+- **Now, get the default configs for your kernel**:
+     ```
+     make defconfig
+     ```
+- **Now, compile your kernel**:
+     ```
+     make 
+     ```
+- **After compiling, its time to install your kernel**:
+     ```
+     make modules_install INSTALL_MOD_PATH=$validebagos 
+     ```
+- **Now, we need to make a few changes**:
+     ```
+     cp -iv arch/x86/boot/bzImage \
+     $validebagos/boot/vmlinuz-6.16.1-validebag
+     
+     cp -iv System.map \
+     $validebagos/boot/System.map-6.16.1
+
+     cp -iv .config 
+     $validebagos/boot/config-6.16.1
+
+     cp -r Documentation -T 
+     $validebagos/usr/share/doc/linux-6.16.1
+     ```
+  
+
+## Second Way: Enter the Chroot environment and compile whatever you want!
+
+1. If you choose this way, you are Linux expert and you wanna have fun compiling every single thing you want :) So we are gonna give you a fresh chroot environment then you have the freedom to compile any package you want among all 94 packages in sources folder. After you think you compiled enough, the kernel compilation steps are same with the First way. Have fun :)
+
+- **Enter the chroot environment with these commands**:
+     ```
+     chroot "$validebagos" /usr/bin/env -i   \
+         HOME=/root                  \
+         TERM="$TERM"                \
+         PS1='(validebagos chroot) \u:\w\$ ' \
+         PATH=/usr/bin:/usr/sbin     \
+         MAKEFLAGS="-j$(nproc)"      \
+         TESTSUITEFLAGS="-j$(nproc)" \
+         /bin/bash --login
+
+     exec /usr/bin/bash --login
+     ```
+
+## Thank you for testing our software and sharing your ideas. See you later.
 
