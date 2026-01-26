@@ -11,12 +11,10 @@
 
 ## How to install Validebag-Os on your computer or VM?
 
-### Method 1 - PowerShell ❤️
 
 1. Before installing the os onto your machine, you need to have a empty partition. It needs to have at least 25 GB storage. When you make sure you have, you can go on with the installation process.
 
-
-   - **First you need to create a mounting point on your hostsytem. You can create it with this command:**:
+   - **At first, you need to create a mounting point on your hostsytem. You can create it with this command:**:
      ```
      mkdir /mnt/validebagos
      ```
@@ -34,7 +32,31 @@
      ```
 
 
-	
+#Note: After each time you close or open a new terminal, you might need to set the umask and variable again. For making sure it is set correctly use this command:
+   - **You can set check the variable and umask with this command:**:
+     ```
+     echo $validebagos
+     umask
+     ```
+
+4. After checking the variable, you now need to mount your disk into the mountpoint.
+   - **Use this command to make your variable a mountpoint:**:
+     ```
+     mkdir -pv $validebagos
+     ```	
+   - **After creating the mountpoint, use this command to mount your disk:**:
+     ```
+     mount -v -t ext4 /dev/sda(yourdisknumber) $validebagos
+     `` 
+
+5. After that, you need to be root user to continue. When you become root user, make sure to change the ownership of validebag os folder to root user.
+ - **You can change the ownership with this command:**:
+     ```
+     chown -R root:root $validebagos
+     case $(uname -m) in
+     x86_64) chown -R root:root $validebagos/lib64 ;;
+     esac
+     ```
 
 
 
