@@ -1,0 +1,9 @@
+mkdir -pv $validebagos/{etc,var} $validebagos/usr/{bin,lib,sbin}
+
+for i in bin lib sbin; do
+  ln -sv usr/$i $validebagos/$i
+done
+
+case $(uname -m) in
+  x86_64) mkdir -pv $validebagos/lib64 ;;
+esac

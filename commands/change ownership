@@ -1,0 +1,4 @@
+chown -R root:root $validebagos
+case $(uname -m) in
+  x86_64) chown -R root:root $validebagos/lib64 ;;
+esac

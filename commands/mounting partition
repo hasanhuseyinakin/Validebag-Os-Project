@@ -1,0 +1,2 @@
+mkdir -pv $validebagos
+mount -v -t ext4 /dev/(yourdiskhere) $validebagos
