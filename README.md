@@ -182,7 +182,7 @@
 At first, congragulations, you just finished a simple preparing the system part in Linux From Scratch. As the Validebag-Os team, we are proud of you. We are continiously trying our best to made it easier and less time consuming for you. We are still working on this project but with your participation into our Distrubition, our family keeps growing :) After all this steps, there are two ways for you to choose from.
 
 
-### First way: Compile the kernel and boot into your Operating System.
+## First way: Compile the kernel and boot into your Operating System.
 
 1. If you choose this way, you are now so close to finish this job. Now you need to go to the sources folder and find the package named linux-6.16.1.tar.xz this package is our Linux Kernel İmage we choose for you. Now continue with this steps:
 - **Make your system ready for compilation**:
