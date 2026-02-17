@@ -1,6 +1,6 @@
 <p align="center"><img src="/img/smalllogo.png" alt="validebagos logo" width="150"></p>
 
-<h1 align="center">Validebag Os 0.4 Beta Version</h1>
+<h1 align="center">Validebag Os 0.5 Beta Version</h1>
 
 <p align="center">Validebag-OS is a lightweight Linux distribution currently in beta, designed specifically for students.
  It is built from scratch to run efficiently on low-resource hardware and offers Turkish language support. 
@@ -9,7 +9,7 @@
 
 <hr>
 
-## How to install Validebag-Os on your computer or VM?
+## How to install Validebag-Os on your VM?
 
 
 1. Before installing the os onto your machine, you need to have a empty partition. It needs to have at least 25 GB storage. When you make sure you have, you can go on with the installation process.
@@ -98,23 +98,23 @@
 8. Now,we need to create a few more directories to continue.This directories are specificly for user tasks such as home, local and many other directories. Also do not skip without creating this folders or your installation might fail. 
 - **Now change into the directory with this command**:
      ```
-     mkdir -pv /etc/{opt,sysconfig}
-     mkdir -pv /lib/firmware
-     mkdir -pv /media/{floppy,cdrom}
-     mkdir -pv /usr/{,local/}{include,src}
-     mkdir -pv /usr/lib/locale
-     mkdir -pv /usr/local/{bin,lib,sbin}
-     mkdir -pv /usr/{,local/}share/{color,dict,doc,info,locale,man}
-     mkdir -pv /usr/{,local/}share/{misc,terminfo,zoneinfo}
-     mkdir -pv /usr/{,local/}share/man/man{1..8}
-     mkdir -pv /var/{cache,local,log,mail,opt,spool}
-     mkdir -pv /var/lib/{color,misc,locate}
+     mkdir -pv $validebagos/etc/{opt,sysconfig}
+     mkdir -pv $validebagos/lib/firmware
+     mkdir -pv $validebagos/media/{floppy,cdrom}
+     mkdir -pv $validebagos/usr/{,local/}{include,src}
+     mkdir -pv $validebagos/usr/lib/locale
+     mkdir -pv $validebagos/usr/local/{bin,lib,sbin}
+     mkdir -pv $validebagos/usr/{,local/}share/{color,dict,doc,info,locale,man}
+     mkdir -pv $validebagos/usr/{,local/}share/{misc,terminfo,zoneinfo}
+     mkdir -pv $validebagos/usr/{,local/}share/man/man{1..8}
+     mkdir -pv $validebagos/var/{cache,local,log,mail,opt,spool}
+     mkdir -pv $validebagos/var/lib/{color,misc,locate}
 
-     ln -sfv /run /var/run
-     ln -sfv /run/lock /var/lock
+     ln -sfv $validebagos/run/var/run
+     ln -sfv $validebagos/run/lock /var/lock
 
-     install -dv -m 0750 /root
-     install -dv -m 1777 /tmp /var/tmp
+     install -dv -m 0750 $validebagos/root
+     install -dv -m 1777 $validebagos/tmp /var/tmp
      ```
 
 9. After that step, now we need to create some symlinks for being able to go into chroot environment. Also do not skip without creating this symlinks or your installation might fail. 
@@ -127,7 +127,7 @@
      ::1        localhost
      EOF
 
-     cat > /etc/passwd << "EOF"
+     cat > $validebagos/etc/passwd << "EOF"
      root:x:0:0:root:/root:/bin/bash
      bin:x:1:1:bin:/dev/null:/usr/bin/false
      daemon:x:6:6:Daemon User:/dev/null:/usr/bin/false
@@ -136,7 +136,7 @@
      nobody:x:65534:65534:Unprivileged User:/dev/null:/usr/bin/false
      EOF
 
-     cat > /etc/group << "EOF"
+     cat > $validebagos/etc/group << "EOF"
      root:x:0:
      bin:x:1:daemon
      sys:x:2:
@@ -174,19 +174,32 @@
 10. As the last step, now we need to delete a single file on your system because it may cause trouble you in the future. Also do not skip without creating this symlinks or your installation might fail.
 - **You can delete the file with this command**:
      ```
-     find /usr/{lib,libexec} -name \*.la -delete
+     find $validebagos/usr/{lib,libexec} -name \*.la -delete
      ```
 
 
-## What to do now?
-At first, congragulations, you just finished a simple preparing the system part in Linux From Scratch. As the Validebag-Os team, we are proud of you. We are continiously trying our best to made it easier and less time consuming for you. We are still working on this project but with your participation into our Distrubition, our family keeps growing :) After all this steps, there are two ways for you to choose from.
+Enter the Chroot environment and compile everything!
 
+1. If you arrived here, you are an Linux expert and you wanna have fun compiling every single thing you want :) So we are gonna give you a fresh chroot environment then you have the freedom to compile any package you want among all 94 packages in sources folder. After you think you compiled enough, the kernel compilation steps are same with the First way. Have fun :)
 
-## First way: Compile the kernel and boot into your Operating System.
+- **Enter the chroot environment with these commands**:
+     ```
+     chroot "$validebagos" /usr/bin/env -i   \
+         HOME=$validebagos/root                  \
+         TERM="$TERM"                \
+         PS1='(validebagos chroot) \u:\w\$ ' \
+         PATH=/usr/bin:$validebagos/usr/sbin     \
+         MAKEFLAGS="-j$(nproc)"      \
+         TESTSUITEFLAGS="-j$(nproc)" \
+         /bin/bash --login
 
-1. If you choose this way, you are now so close to finish this job. Now you need to go to the sources folder and find the package named linux-6.16.1.tar.xz this package is our Linux Kernel İmage we choose for you. Now continue with this steps:
+     exec /usr/bin/bash --login
+     ```
+2. If you want to boot it on your computer and wanna try real linux experince. After all 94 packages in sources folder, You can now compile your kernel and boot in your system with this steps:
 - **Make your system ready for compilation**:
-     ```
+
+- **Now, lets start to compile your kernel with mrproper**:
+   ```
      make mrproper
      ```
 
@@ -216,25 +229,10 @@ At first, congragulations, you just finished a simple preparing the system part 
      cp -r Documentation -T 
      $validebagos/usr/share/doc/linux-6.16.1
      ```
-  
+  Now you are ready to boot into your os :)
 
-## Second Way: Enter the Chroot environment and compile everything!
-
-1. If you choose this way, you are Linux expert and you wanna have fun compiling every single thing you want :) So we are gonna give you a fresh chroot environment then you have the freedom to compile any package you want among all 94 packages in sources folder. After you think you compiled enough, the kernel compilation steps are same with the First way. Have fun :)
-
-- **Enter the chroot environment with these commands**:
-     ```
-     chroot "$validebagos" /usr/bin/env -i   \
-         HOME=/root                  \
-         TERM="$TERM"                \
-         PS1='(validebagos chroot) \u:\w\$ ' \
-         PATH=/usr/bin:/usr/sbin     \
-         MAKEFLAGS="-j$(nproc)"      \
-         TESTSUITEFLAGS="-j$(nproc)" \
-         /bin/bash --login
-
-     exec /usr/bin/bash --login
-     ```
+   
+     
 
 ## Thank you for testing our software and sharing your ideas. See you later.
 
